@@ -9,6 +9,7 @@ packages:
  - pipewire
  - pipewire-pulse
  - wireplumber
+ - plymouth
 services:
  - sddm
 user-services:
