@@ -5,19 +5,14 @@ packages:
  - cosmic
  - waydroid
  - waydroid-image
- - sddm
  - pipewire
  - pipewire-pulse
  - wireplumber
  - plymouth
  - udisks2
 services:
- - sddm
+ - cosmic-greeter
 user-services:
  - wireplumber
 commands:
   - 'rm -f /usr/share/applications/Waydroid.desktop'
-  - 'cat << EOF > /usr/lib/sddm/sddm.conf.d/no-gnome-initial-setup.conf
-[Users]
-HideUsers=gnome-initial-setup
-EOF'
